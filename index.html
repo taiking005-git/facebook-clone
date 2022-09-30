@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    /> -->
+    <title>Taisocial</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="topbar">
+        <div class="topbarLeft">
+          <a href="index.html"> <span class="title">Taisocial</span> </a>
+        </div>
+        <div class="topbarCenter">
+          <div class="searchbar">
+            <span class="material-symbols-rounded">search</span>
+            <input
+              type="text"
+              placeholder="Search for friend, post or video"
+              class="searchbarInput"
+            />
+          </div>
+        </div>
+        <div class="topbarRight">
+          <div class="topbarLinks">
+            <div class="topbarLink">Homepage</div>
+            <div class="topbarLink">Timeline</div>
+          </div>
+          <div class="topbarItems">
+            <div class="topbarItem">
+              <span class="material-symbols-rounded" class="topbarItemIcon"
+                >person</span
+              >
+              <span class="topbarItemBadge">1</span>
+            </div>
+            <div class="topbarItem">
+              <span class="material-symbols-rounded" class="topbarItemIcon"
+                >notifications</span
+              >
+              <span class="topbarItemBadge">3</span>
+            </div>
+            <div class="topbarItem">
+              <span class="material-symbols-rounded">chat</span>
+              <span class="topbarItemBadge">5</span>
+            </div>
+          </div>
+        </div>
+        <a href="profile.html">
+          <img src="./assets/person/pic-1.png" alt="" class="avatar"
+        /></a>
+      </header>
+      <main class="mainContainer">
+        <div class="mainleftWrapper">
+          <nav>
+            <ul class="navLists">
+              <li class="navList">
+                <span>
+                  <img src="./assets/person/pic-1.png" alt="" class="avatar"
+                /></span>
+                <span class="userName">Tai John</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">message</span>
+                <span class="iconTitle">Chat</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">group</span>
+                <span class="iconTitle">Friends</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">groups</span>
+                <span class="iconTitle">Groups</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">store</span>
+                <span class="iconTitle">Marketplace</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">live_tv</span>
+                <span class="iconTitle">Watch</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">history</span>
+                <span class="iconTitle">Memories</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">bookmark</span>
+                <span class="iconTitle">Saved</span>
+              </li>
+              <li class="navList">
+                <span class="material-symbols-rounded navIcon">pages</span>
+                <span class="iconTitle">Pages</span>
+              </li>
+            </ul>
+            <button class="showmore Btn">See more</button>
+            <hr class="lefthr" />
+            <h3>Your friends</h3>
+            <ul class="friendLists">
+              <li class="friendList">
+                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
+                <span class="friendNames">Joy Happiness</span>
+              </li>
+              <li class="friendList">
+                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
+                <span class="friendNames">Joy Happiness</span>
+              </li>
+              <li class="friendList">
+                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
+                <span class="friendNames">Joy Happiness</span>
+              </li>
+              <li class="friendList">
+                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
+                <span class="friendNames">Joy Happiness</span>
+              </li>
+              <li class="friendList">
+                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
+                <span class="friendNames">Joy Happiness</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="maincenterWrapper">
+          <div class="post">
+            <div class="postTop">
+              <img src="./assets/person/pic-1.png" alt="" class="profileImg" />
+              <button class="postInput">What's on your mind, userName?</button>
+            </div>
+            <hr class="postHr" />
+            <div class="postBottom">
+              <div class="postMedia" id="postVideo">
+                <span class="material-symbols-rounded videoIcon">
+                  video_call
+                </span>
+                <span class="postMedia" id="postTag">Live video</span>
+              </div>
+              <div class="postPhoto">
+                <span class="material-symbols-rounded photoIcon">
+                  add_photo_alternate
+                </span>
+                <span class="postTag">Photo/video</span>
+              </div>
+              <div class="postMedia" id="postFeeling">
+                <span class="material-symbols-rounded moodIcon"> mood </span>
+                <span class="postTag">Feeling/activity</span>
+              </div>
+            </div>
+          </div>
+          <!--=================================== shared Post  ========================-->
+          <div class="sharedPost">
+            <div class="sharedPostInfo">
+              <div class="profileDetails">
+                <div class="profileImg">
+                  <img
+                    src="./assets/person/pic-1.png"
+                    alt=""
+                    class="profileImg"
+                  />
+                </div>
+                <div class="profileName">
+                  <h4><span class="postUserName">Tai Johnson</span></h4>
+                  <span class="postDate">5 mins ago</span>
+                </div>
+              </div>
+              <div class="more">
+                <span class="material-symbols-rounded"> more_horiz </span>
+              </div>
+            </div>
+            <div class="sharedPostText">The sky is blue</div>
+            <div class="sharedPostMedia">
+              <img src="./assets/post/nature.jpg" alt="" class="postImg" />
+            </div>
+            <div class="sharedPostStatistic">
+              <div class="like">
+                <span class="material-symbols-rounded"> thumb_up </span>
+                <span class="material-symbols-rounded"> favorite </span>
+                <span id="reactionCount">14K</span>
+              </div>
+              <div class="commentnShare">
+                <span id="commentCount">1.5K</span> Comments
+                <span id="shareCount">275</span>
+                Shares
+              </div>
+            </div>
+            <hr />
+            <div class="sharedPostTopReaction">
+              <button>
+                <span class="material-symbols-rounded"> thumb_up </span>Like
+              </button>
+              <button>
+                <span class="material-symbols-rounded"> comment </span>Comment
+              </button>
+              <button>
+                <span class="material-symbols-rounded"> share </span>Share
+              </button>
+            </div>
+            <div class="sharedPostComment"></div>
+          </div>
+          <div class="sharedPost">
+            <div class="sharedPostInfo">
+              <div class="profileDetails">
+                <div class="profileImg">
+                  <img
+                    src="./assets/person/pic-1.png"
+                    alt=""
+                    class="profileImg"
+                  />
+                </div>
+                <div class="profileName">
+                  <h4><span class="postUserName">Tai Johnson</h4>
+                  <span class="postDate">15 mins ago</span>
+                </div>
+              </div>
+              <div class="more">
+                <span class="material-symbols-rounded"> more_horiz </span>
+              </div>
+            </div>
+            <div class="sharedPostText">The new ride I gift myself</div>
+            <div class="sharedPostMedia">
+              <img
+                src="./assets/post/porsche-1851246_1920.jpg"
+                alt=""
+                class="postImg"
+              />
+            </div>
+            <div class="sharedPostStatistic">
+              <div class="like">
+                <span class="material-symbols-rounded"> thumb_up </span>
+                <span class="material-symbols-rounded"> favorite </span>
+                <span id="reactionCount">14K</span>
+              </div>
+              <div class="commentnShare">
+                <span id="commentCount">1.5K</span> Comments
+                <span id="shareCount">275</span>
+                Shares
+              </div>
+            </div>
+            <hr />
+            <div class="sharedPostTopReaction">
+              <button>
+                <span class="material-symbols-rounded"> thumb_up </span>Like
+              </button>
+              <button>
+                <span class="material-symbols-rounded"> comment </span>Comment
+              </button>
+              <button>
+                <span class="material-symbols-rounded"> share </span>Share
+              </button>
+            </div>
+            <div class="sharedPostComment"></div>
+          </div>
+        </div>
+        <!-- --------------------------------- main right -->
+        <div class="mainrightWrapper">
+          <div class="mainright">
+            <div class="birthdayNotifications">
+              <b><span>Pola Foster</span></b> and <b>3 other friends</b> have a
+              birthday today.
+            </div>
+            <div class="ads">
+              <img
+                src="./assets/post/car-1376190_1920.jpg"
+                alt=""
+                class="adsImg"
+              />
+            </div>
+            <div class="onlineFriends">
+              <span><h3>Online Friends</h3> </span>
+              <ul class="onlineFriendsLists">
+                <li class="onlinefriendList">
+                  <img
+                    src="./assets/person/pic-5.png"
+                    alt=""
+                    class="onlinefriendImg profileImg"
+                  />
+                  <b><span class="onlinefriendName">Daniel David</span></b>
+                  <div class="onlineMark"></div>
+                </li>
+                <li class="onlinefriendList">
+                  <img
+                    src="./assets/person/pic-5.png"
+                    alt=""
+                    class="onlinefriendImg profileImg"
+                  />
+                  <b><span class="onlinefriendName">Daniel David</span></b>
+                  <div class="onlineMark"></div>
+                </li>
+                <li class="onlinefriendList">
+                  <img
+                    src="./assets/person/pic-5.png"
+                    alt=""
+                    class="onlinefriendImg profileImg"
+                  />
+                  <b><span class="onlinefriendName">Daniel David</span></b>
+                  <div class="onlineMark"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

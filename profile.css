@@ -1,0 +1,82 @@
+.mainprofilecenterWrapper {
+  flex: 9;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.maincenterTopWrapper {
+  width: 100%;
+  height: 450px;
+}
+.coverInfoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.coverpageImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.coverInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  position: absolute;
+  height: 200px;
+  top: 70%;
+}
+
+.coverprofileImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.maincenterBottomWrapper {
+  display: flex;
+  padding: 20px;
+}
+.maincenterBottomLeft {
+  flex: 5;
+  overflow-x: hidden;
+}
+.maincenterBottomRight {
+  flex: 4;
+}
+
+.userInfoWrapper {
+  padding: 20px;
+}
+
+.userInfo {
+  margin: 5px 0;
+}
+
+.userFriendsWrapper {
+  padding: 20px;
+}
+.userFriends {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  /* gap: 10px; */
+}
+.userFriend {
+  width: 100px;
+  /* height: 150px; */
+}
+
+.userFriendImg {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}

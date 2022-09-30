@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500;1,700&display=swap");
+
+* {
+  margin: unset;
+  padding: unset;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  height: 100vh;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+hr {
+  margin: 15px 0;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.topbar {
+  position: fixed;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgb(25, 99, 211);
+  z-index: 1000;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+.topbarCenter {
+  flex: 5;
+  margin-right: 10px;
+}
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.searchbar span {
+  font-size: 20px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.searchbarInput {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+.searchbarInput:focus {
+  outline: none;
+}
+.topbarRight {
+  flex: 4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.topbarLinks {
+  display: flex;
+  font-size: 14px;
+}
+
+.topbarLink {
+  margin-right: 10px;
+}
+
+.topbarItems {
+  display: flex;
+  cursor: pointer;
+}
+.topbarItem {
+  margin-right: 10px;
+  position: relative;
+}
+.topbarItemIcon {
+  font-size: 30px;
+  color: white;
+}
+.topbarItemBadge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  top: -3px;
+  right: -3px;
+}
+/*=================================== main container */
+.mainContainer {
+  display: flex;
+  /* position: relative; */
+  /* height: 100vh; */
+  /* width: 100%; */
+}
+
+/*=================================== main left side nav container */
+
+.mainleftWrapper {
+  flex: 3;
+  height: calc(100vh - 50px);
+  /* margin-top: 50px; */
+  position: sticky;
+  overflow-y: scroll;
+  top: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #b8c4f8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(38, 108, 212, 0.445);
+}
+nav {
+  padding: 20px 0 0 20px;
+}
+
+.navLists {
+  display: flex;
+  flex-direction: column;
+}
+
+.navList {
+  height: 50px;
+  padding: 0 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navList:hover {
+  background-color: #b8c4f8;
+}
+.navList span {
+  margin-right: 20px;
+}
+
+.Btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  width: 150px;
+}
+
+.friendLists {
+  margin: 20px 0;
+}
+
+.friendList {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.friendList img {
+  margin-right: 20px;
+}
+
+/*=================================== main center container */
+
+.maincenterWrapper {
+  flex: 5;
+  margin-top: 50px;
+  min-height: 100vh;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*=================================== main center  post start */
+
+.post {
+  /* height: 170px; */
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
+}
+
+.postTop {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.postInput {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.profileImg {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.postBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postBottom div {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.postBottom div:hover {
+  background-color: #b8c4f8;
+}
+
+.postTag {
+  margin-left: 5px;
+}
+
+.videoIcon {
+  color: red;
+}
+.photoIcon {
+  color: green;
+}
+
+.moodIcon {
+  color: rgb(214, 214, 5);
+}
+/*=================================== main center post end */
+/*=================================== main center share start */
+.sharedPost {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
+}
+
+.more span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.more span:hover {
+  background-color: #b8c4f8;
+}
+.sharedPostInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
+}
+.profileDetails {
+  display: flex;
+}
+
+.sharedPostText {
+  padding: 10px 20px;
+}
+
+.sharedPostMedia {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.sharedPostStatistic {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.like span {
+  margin-right: 5px;
+}
+
+.sharedPostTopReaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+}
+
+.sharedPostTopReaction button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 2px;
+  cursor: pointer;
+  /* background-color: white; */
+}
+
+.sharedPostTopReaction button span {
+  margin-right: 10px;
+}
+
+.sharedPostTopReaction button:hover {
+  background-color: #b8c4f8;
+}
+
+.postImg {
+  width: 100%;
+  object-fit: cover;
+}
+/* =========================== Main right */
+.mainrightWrapper {
+  margin-top: 50px;
+  flex: 4;
+  margin-left: 30px;
+  margin-right: 20px;
+}
+.mainright {
+  padding: 20px;
+}
+
+.ads {
+  margin: 20px 0;
+}
+
+.adsImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.onlineFriends {
+  margin-top: 20px;
+}
+
+.onlineFriendsLists {
+  margin-top: 20px;
+  position: relative;
+}
+
+.onlinefriendList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.onlineMark {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  left: 25px;
+  top: -5px;
+  background-color: lime;
+  border: 2px solid white;
+}
+
+.onlinefriendList img {
+  margin-right: 20px;
+}
