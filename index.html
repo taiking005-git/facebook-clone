@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <script src="./dummyData.js"></script>
+
     <!-- <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -64,10 +66,12 @@
           <nav>
             <ul class="navLists">
               <li class="navList">
-                <span>
-                  <img src="./assets/person/pic-1.png" alt="" class="avatar"
-                /></span>
-                <span class="userName">Tai John</span>
+                <a href="profile.html">
+                  <span>
+                    <img src="./assets/person/pic-1.png" alt="" class="avatar"
+                  /></span>
+                  <span class="userName">Tai John</span>
+                </a>
               </li>
               <li class="navList">
                 <span class="material-symbols-rounded navIcon">message</span>
@@ -106,26 +110,10 @@
             <hr class="lefthr" />
             <h3>Your friends</h3>
             <ul class="friendLists">
-              <li class="friendList">
+              <!-- <li class="friendList">
                 <img src="./assets/person/pic-2.png" alt="" class="avatar" />
                 <span class="friendNames">Joy Happiness</span>
-              </li>
-              <li class="friendList">
-                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
-                <span class="friendNames">Joy Happiness</span>
-              </li>
-              <li class="friendList">
-                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
-                <span class="friendNames">Joy Happiness</span>
-              </li>
-              <li class="friendList">
-                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
-                <span class="friendNames">Joy Happiness</span>
-              </li>
-              <li class="friendList">
-                <img src="./assets/person/pic-2.png" alt="" class="avatar" />
-                <span class="friendNames">Joy Happiness</span>
-              </li>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -157,107 +145,57 @@
           </div>
           <!--=================================== shared Post  ========================-->
           <div class="sharedPost">
-            <div class="sharedPostInfo">
-              <div class="profileDetails">
-                <div class="profileImg">
-                  <img
-                    src="./assets/person/pic-1.png"
-                    alt=""
-                    class="profileImg"
-                  />
+            <!-- <div class="postWrapper">
+              <div class="sharedPostInfo">
+                <div class="profileDetails">
+                  <div class="profileImg">
+                    <img
+                      src="./assets/person/pic-1.png"
+                      alt=""
+                      class="profileImg"
+                    />
+                  </div>
+                  <div class="profileName">
+                    <h4><span class="postUserName">Tai Johnson</span></h4>
+                    <span class="postDate">5 mins ago</span>
+                  </div>
                 </div>
-                <div class="profileName">
-                  <h4><span class="postUserName">Tai Johnson</span></h4>
-                  <span class="postDate">5 mins ago</span>
+                <div class="more">
+                  <span class="material-symbols-rounded"> more_horiz </span>
                 </div>
               </div>
-              <div class="more">
-                <span class="material-symbols-rounded"> more_horiz </span>
+              <div class="sharedPostText">The sky is blue</div>
+              <div class="sharedPostMedia">
+                <img src="./assets/post/3.jpg" alt="" class="postImg" />
               </div>
-            </div>
-            <div class="sharedPostText">The sky is blue</div>
-            <div class="sharedPostMedia">
-              <img src="./assets/post/nature.jpg" alt="" class="postImg" />
-            </div>
-            <div class="sharedPostStatistic">
-              <div class="like">
-                <span class="material-symbols-rounded"> thumb_up </span>
-                <span class="material-symbols-rounded"> favorite </span>
-                <span id="reactionCount">14K</span>
+              <div class="sharedPostStatistic">
+                <div class="like">
+                  <span class="material-symbols-rounded"> thumb_up </span>
+                  <span class="material-symbols-rounded"> favorite </span>
+                  <span id="reactionCount">14K</span>
+                </div>
+                <div class="commentnShare">
+                  <span id="commentCount">1.5K</span> Comments
+                  <span id="shareCount">275</span>
+                  Shares
+                </div>
               </div>
-              <div class="commentnShare">
-                <span id="commentCount">1.5K</span> Comments
-                <span id="shareCount">275</span>
-                Shares
+              <hr />
+              <div class="sharedPostTopReaction">
+                <button>
+                  <span class="material-symbols-rounded"> thumb_up </span>Like
+                </button>
+                <button>
+                  <span class="material-symbols-rounded"> comment </span>Comment
+                </button>
+                <button>
+                  <span class="material-symbols-rounded"> share </span>Share
+                </button>
               </div>
-            </div>
-            <hr />
-            <div class="sharedPostTopReaction">
-              <button>
-                <span class="material-symbols-rounded"> thumb_up </span>Like
-              </button>
-              <button>
-                <span class="material-symbols-rounded"> comment </span>Comment
-              </button>
-              <button>
-                <span class="material-symbols-rounded"> share </span>Share
-              </button>
-            </div>
-            <div class="sharedPostComment"></div>
+              <div class="sharedPostComment"></div>
+            </div> -->
           </div>
-          <div class="sharedPost">
-            <div class="sharedPostInfo">
-              <div class="profileDetails">
-                <div class="profileImg">
-                  <img
-                    src="./assets/person/pic-1.png"
-                    alt=""
-                    class="profileImg"
-                  />
-                </div>
-                <div class="profileName">
-                  <h4><span class="postUserName">Tai Johnson</h4>
-                  <span class="postDate">15 mins ago</span>
-                </div>
-              </div>
-              <div class="more">
-                <span class="material-symbols-rounded"> more_horiz </span>
-              </div>
-            </div>
-            <div class="sharedPostText">The new ride I gift myself</div>
-            <div class="sharedPostMedia">
-              <img
-                src="./assets/post/porsche-1851246_1920.jpg"
-                alt=""
-                class="postImg"
-              />
-            </div>
-            <div class="sharedPostStatistic">
-              <div class="like">
-                <span class="material-symbols-rounded"> thumb_up </span>
-                <span class="material-symbols-rounded"> favorite </span>
-                <span id="reactionCount">14K</span>
-              </div>
-              <div class="commentnShare">
-                <span id="commentCount">1.5K</span> Comments
-                <span id="shareCount">275</span>
-                Shares
-              </div>
-            </div>
-            <hr />
-            <div class="sharedPostTopReaction">
-              <button>
-                <span class="material-symbols-rounded"> thumb_up </span>Like
-              </button>
-              <button>
-                <span class="material-symbols-rounded"> comment </span>Comment
-              </button>
-              <button>
-                <span class="material-symbols-rounded"> share </span>Share
-              </button>
-            </div>
-            <div class="sharedPostComment"></div>
-          </div>
+          <!--=================================== shared Post END ========================-->
         </div>
         <!-- --------------------------------- main right -->
         <div class="mainrightWrapper">
@@ -267,33 +205,11 @@
               birthday today.
             </div>
             <div class="ads">
-              <img
-                src="./assets/post/car-1376190_1920.jpg"
-                alt=""
-                class="adsImg"
-              />
+              <img src="./assets/post/2.jpg" alt="" class="adsImg" />
             </div>
             <div class="onlineFriends">
               <span><h3>Online Friends</h3> </span>
               <ul class="onlineFriendsLists">
-                <li class="onlinefriendList">
-                  <img
-                    src="./assets/person/pic-5.png"
-                    alt=""
-                    class="onlinefriendImg profileImg"
-                  />
-                  <b><span class="onlinefriendName">Daniel David</span></b>
-                  <div class="onlineMark"></div>
-                </li>
-                <li class="onlinefriendList">
-                  <img
-                    src="./assets/person/pic-5.png"
-                    alt=""
-                    class="onlinefriendImg profileImg"
-                  />
-                  <b><span class="onlinefriendName">Daniel David</span></b>
-                  <div class="onlineMark"></div>
-                </li>
                 <li class="onlinefriendList">
                   <img
                     src="./assets/person/pic-5.png"
@@ -309,5 +225,7 @@
         </div>
       </main>
     </div>
+    <script src="./app.js"></script>
+    <script src="./post.js"></script>
   </body>
 </html>

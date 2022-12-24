@@ -65,9 +65,12 @@
 }
 .userFriends {
   width: 100%;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 10px;
+  row-gap: 10px; */
   /* gap: 10px; */
 }
 .userFriend {

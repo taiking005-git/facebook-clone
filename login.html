@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="loginWrapper">
+      <div class="loginContainer">
+        <div class="loginLeft">
+          <h1 class="loginLogo">Taisocial</h1>
+          <span class="loginDescription"
+            >Connect with friends and the world around you on Taisocial</span
+          >
+        </div>
+        <div class="loginRight">
+          <div class="loginBox">
+            <input
+              type="text"
+              placeholder="Email"
+              class="loginInput"
+              required
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              class="loginInput"
+              required
+            />
+            <button class="login Button">Log In</button>
+
+            <span class="forgetPassword">Forgot Password?</span>
+            <button
+              class="createAccount Button"
+              onclick="document.location.href='/signup.html'"
+            >
+              Create New Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

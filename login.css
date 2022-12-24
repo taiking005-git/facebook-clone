@@ -1,0 +1,93 @@
+.loginWrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginRight,
+.loginLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loginRight {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.loginDescription {
+  font-size: 24px;
+}
+
+.loginBox {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.loginInput {
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 1px solid gray;
+  font-size: 18px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.Button {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color ease-in 0.5s;
+}
+
+.login {
+  background-color: #1775ee;
+  color: white;
+}
+
+.login:hover {
+  background-color: #0f4080;
+  color: white;
+}
+
+.createAccount {
+  background-color: green;
+  color: white;
+}
+.createAccount:hover {
+  background-color: rgb(3, 66, 3);
+  color: white;
+}
+
+.forgetPassword {
+  text-align: center;
+  color: #1775ee;
+  cursor: pointer;
+}

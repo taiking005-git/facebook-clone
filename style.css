@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500;1,700&display=swap");
 
+:root {
+  --bgColor-light: #f0f2f5;
+  --primaryColor: #1775ee;
+  --borderRadius: 10px;
+}
+
 * {
   margin: unset;
   padding: unset;
@@ -14,9 +20,14 @@ body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   min-height: 100vh;
+  background-color: var(--bgColor-light);
 }
 hr {
   margin: 15px 0;
+}
+
+a:visited {
+  color: black;
 }
 
 .avatar {
@@ -34,7 +45,7 @@ hr {
   width: 100%;
   align-items: center;
   padding: 0 20px;
-  background-color: rgb(25, 99, 211);
+  background-color: var(--primaryColor);
   z-index: 1000;
 }
 
@@ -45,7 +56,7 @@ hr {
 .title {
   font-weight: bold;
   font-size: 24px;
-  color: white;
+  color: var(--bgColor-light);
   cursor: pointer;
 }
 .topbarCenter {
@@ -55,7 +66,7 @@ hr {
 .searchbar {
   width: 100%;
   height: 30px;
-  background-color: white;
+  background-color: var(--bgColor-light);
   border-radius: 30px;
   display: flex;
   align-content: center;
@@ -76,6 +87,7 @@ hr {
   border: none;
   font-weight: bold;
   font-size: 13px;
+  background-color: var(--bgColor-light);
 }
 .searchbarInput:focus {
   outline: none;
@@ -85,7 +97,7 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: var(--bgColor-light);
 }
 
 .topbarLinks {
@@ -107,7 +119,7 @@ hr {
 }
 .topbarItemIcon {
   font-size: 30px;
-  color: white;
+  color: var(--bgColor-light);
 }
 .topbarItemBadge {
   position: absolute;
@@ -119,7 +131,7 @@ hr {
   font-size: 12px;
   border-radius: 50%;
   background-color: red;
-  color: white;
+  color: var(--bgColor-light);
   top: -3px;
   right: -3px;
 }
@@ -212,7 +224,7 @@ nav {
 
 .post {
   /* height: 170px; */
-  background-color: white;
+  background-color: var(--bgColor-light);
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
@@ -277,15 +289,20 @@ nav {
 }
 /*=================================== main center post end */
 /*=================================== main center share start */
-.sharedPost {
-  background-color: white;
+.postWrapper {
+  background-color: var(--bgColor-light);
   border-radius: 10px;
   margin: 10px;
+  transition: box-shadow ease-in-out 0.15s;
   box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
   -webkit-box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
   -moz-box-shadow: 0 0 16px -5px rgba(0, 0, 0, 0.65);
 }
-
+.postWrapper:hover {
+  box-shadow: 0 7px 16px 2px rgba(29, 11, 131, 0.86);
+  -webkit-box-shadow: 0 7px 16px 2px rgba(29, 11, 131, 0.86);
+  -moz-box-shadow: 0 7px 16px 2px rgba(29, 11, 131, 0.86);
+}
 .more span {
   height: 40px;
   width: 40px;
@@ -330,6 +347,10 @@ nav {
 .like span {
   margin-right: 5px;
 }
+.postDate {
+  font-size: small;
+  color: gray;
+}
 
 .sharedPostTopReaction {
   display: flex;
@@ -347,7 +368,7 @@ nav {
   border: none;
   margin: 0 2px;
   cursor: pointer;
-  /* background-color: white; */
+  /* background-color: var(--bgColor-light); */
 }
 
 .sharedPostTopReaction button span {
@@ -398,7 +419,18 @@ nav {
   margin: 20px 0;
 }
 
-.onlineMark {
+.offline {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  left: 25px;
+  top: -5px;
+  background-color: gray;
+  border: 2px solid var(--bgColor-light);
+}
+
+.online {
   position: absolute;
   height: 15px;
   width: 15px;
@@ -406,7 +438,7 @@ nav {
   left: 25px;
   top: -5px;
   background-color: lime;
-  border: 2px solid white;
+  border: 2px solid var(--bgColor-light);
 }
 
 .onlinefriendList img {
